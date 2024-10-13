@@ -12,6 +12,11 @@ test('renders a increment button', ()=>{
   render(<App />);
   const button = screen.getByText("Add")
   expect(button).toBeInTheDocument()
+  
+  test('renders a decrement button', ()=>{
+    render(<App />);
+    const button = screen.getByText("Sub")
+    expect(button).toBeInTheDocument()
 })
 
 
